@@ -12,7 +12,7 @@ https://ucars-mobile.netlify.app/
 
 - For example, you can click button `GET STARTED` on the top right page to go the car brand list page
 
-- There are 4 routes
+- There are 3 routes
 
 ```Javascript
 /**
