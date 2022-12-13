@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { LATEST_NEW } from "../utils/DataSeed";
@@ -19,19 +19,42 @@ function LatestNew() {
     }
   }, [firstNum, secondNum]);
   return (
-    <Box sx={{ mt: 3, width: 375, mb: 5, height: 380 }}>
-      <Box sx={{ display: "flex", justifyContent: "space-between", p: 1 }}>
-        <Typography fontWeight={600} fontSize={16}>
+    <Box sx={{ mt: 3, width: 375, height: 380 }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          p: 1,
+        }}
+      >
+        <Typography ml={1} fontWeight={600} fontSize={16}>
           Latest News
         </Typography>
-        <ArrowForwardIcon onClick={handleLatestNew} fontSize="small" />
+        <ArrowForwardIcon
+          sx={{ mr: 1 }}
+          onClick={handleLatestNew}
+          fontSize="small"
+        />
       </Box>
 
       <Box sx={{ p: 1 }}>
         {LATEST_NEW.slice(firstNum, secondNum).map((car) => (
-          <Box sx={{ width: 350, height: 250 }} key={car.id}>
-            <Box component="img" alt={car.brand} src={car.image} width="100%" />
-
+          <Paper
+            sx={{
+              width: 350,
+              height: 220,
+              p: 2,
+            }}
+            key={car.id}
+          >
+            <Box width={224} height={96}>
+              <Box
+                component="img"
+                alt={car.brand}
+                src={car.image}
+                width="100%"
+              />
+            </Box>
             <Box
               sx={{
                 width: 43,
@@ -63,7 +86,7 @@ function LatestNew() {
                 {car.author} - {car.time}
               </Typography>
             </Box>
-          </Box>
+          </Paper>
         ))}
       </Box>
     </Box>

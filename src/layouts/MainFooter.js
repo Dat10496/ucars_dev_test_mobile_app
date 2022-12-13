@@ -4,12 +4,19 @@ import NewspaperRoundedIcon from "@mui/icons-material/NewspaperRounded";
 import Person2OutlinedIcon from "@mui/icons-material/Person2Outlined";
 import { Box, Typography } from "@mui/material";
 
+const styleBox = {
+  "&: hover": {
+    cursor: "pointer",
+  },
+  textAlign: "center",
+};
+
 function MainFooter() {
   return (
     <>
       <Box
         sx={{
-          width: 375,
+          width: { xs: 375, sm: 700, md: 900 },
           height: 70,
           display: "flex",
           justifyContent: "space-evenly",
@@ -21,19 +28,25 @@ function MainFooter() {
           borderTop: "0.5px solid #B4B4B4",
         }}
       >
-        <Box sx={{ textAlign: "center" }}>
+        <Box sx={styleBox}>
           <HomeRoundedIcon fontSize="small" />
-          <Typography>Home</Typography>
+          <Typography fontSize={12} fontWeight={400} color="#232323">
+            Home
+          </Typography>
         </Box>
 
-        <Box sx={{ textAlign: "center", color: "#B4B4B4" }}>
-          <NewspaperRoundedIcon fontSize="small" />
-          <Typography>News</Typography>
+        <Box sx={styleBox}>
+          <NewspaperRoundedIcon sx={{ color: "#B4B4B4" }} fontSize="small" />
+          <Typography fontSize={12} fontWeight={400} color="#B4B4B4">
+            News
+          </Typography>
         </Box>
 
-        <Box sx={{ textAlign: "center", color: "#B4B4B4" }}>
-          <Person2OutlinedIcon fontSize="small" />
-          <Typography>Profile</Typography>
+        <Box sx={styleBox}>
+          <Person2OutlinedIcon sx={{ color: "#B4B4B4" }} fontSize="small" />
+          <Typography fontSize={12} fontWeight={400} color="#B4B4B4">
+            Profile
+          </Typography>
         </Box>
       </Box>
     </>

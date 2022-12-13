@@ -9,9 +9,13 @@ import UsedCar from "../components/UsedCar";
 function HomePage() {
   return (
     <Stack>
-      <PopularBrands />
+      <Box name="popularCar">
+        <PopularBrands />
+      </Box>
 
-      <CarType />
+      <Box name="carType">
+        <CarType />
+      </Box>
 
       <Box name="usedCar">
         <UsedCar />

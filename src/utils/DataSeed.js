@@ -13,13 +13,13 @@ import ford from "../images/logo/ford.png";
 import coupe from "../images/car_type/coupe.png";
 import sedan from "../images/car_type/sedan.png";
 import suv from "../images/car_type/suv.png";
-import mpv from "../images/car_type/mpv.png";
+import mpv from "../images/car_type/mpv1.png";
 import hatchback from "../images/car_type/hatchback.png";
 import sport from "../images/car_type/sport.png";
 import commercial from "../images/car_type/comercial.png";
 import classic from "../images/car_type/classic.png";
 
-import usedcar1 from "../images/used_car/1.png";
+import usedcar1 from "../images/used_car/1.jpg";
 import usedcar2 from "../images/used_car/2.png";
 import usedcar3 from "../images/used_car/3.png";
 import usedcar4 from "../images/used_car/4.png";

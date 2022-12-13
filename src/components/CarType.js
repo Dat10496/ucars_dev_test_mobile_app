@@ -20,13 +20,17 @@ function CarType() {
     }
   }, [firstNum, secondNum]);
   return (
-    <Box sx={{ mt: 3, width: 375 }}>
-      <Box sx={{ display: "flex", justifyContent: "space-between", p: 1 }}>
-        <Typography fontWeight={600} fontSize={16}>
+    <Box sx={{ mt: 3, width: { xs: 375, sm: 700, md: 900 } }}>
+      <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Typography ml={2} fontWeight={600} fontSize={16}>
           Car Type
         </Typography>
 
-        <ArrowForwardIcon onClick={handleTypeCar} fontSize="small" />
+        <ArrowForwardIcon
+          sx={{ mr: 1 }}
+          onClick={handleTypeCar}
+          fontSize="small"
+        />
       </Box>
 
       <Box
@@ -38,18 +42,25 @@ function CarType() {
       >
         {CAR_TYPES.slice(firstNum, secondNum).map((type) => (
           <Box
-            sx={{ textAlign: "center", width: 59, height: 68 }}
+            sx={{
+              textAlign: "center",
+              width: 64,
+              height: 70,
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              "&: hover": {
+                cursor: "pointer",
+              },
+            }}
             key={type.type}
           >
-            <Box
-              component="img"
-              alt="carType"
-              src={type.logo}
-              width="64px"
-              height="32px"
-            />
-
-            <Typography>{type.type}</Typography>
+            <Box width={64} height={32}>
+              <Box component="img" alt="carType" src={type.logo} width="100%" />
+            </Box>
+            <Typography fontSize={12} fontWeight={400}>
+              {type.type}
+            </Typography>
           </Box>
         ))}
       </Box>

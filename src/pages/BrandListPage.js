@@ -22,7 +22,7 @@ const Search = styled("div")(({ theme }) => ({
   },
   marginRight: theme.spacing(2),
   marginLeft: 0,
-  width: 375,
+  minWidth: 375,
   height: 40,
 }));
 const SearchIconWrapper = styled("div")(({ theme }) => ({
@@ -69,7 +69,7 @@ function BrandListPage() {
 
   return (
     <Box>
-      <Box sx={{ width: 375, height: 103 }} name="header">
+      <Box sx={{ minWidth: 375, height: 103 }} name="header">
         <Box sx={{ display: "flex", justifyContent: "space-between", p: 2 }}>
           <Box component={RouterLink} to="/">
             <ArrowBackIosOutlinedIcon />
@@ -86,7 +86,7 @@ function BrandListPage() {
             <SwapVertIcon sx={{ ml: 2 }} />
           </Box>
         </Box>
-        <Typography fontWeight={600} variant="h4" fontSize={24} ml={2} mt={1}>
+        <Typography fontWeight={600} fontSize={24} ml={2} mt={1}>
           Car Brand List
         </Typography>
       </Box>
@@ -103,7 +103,7 @@ function BrandListPage() {
         </Search>
       </Box>
 
-      <Box name="body">
+      <Box name="body" sx={{ minWidth: 375 }}>
         {resultQuery.map((brand) => (
           <Box
             sx={{
@@ -118,7 +118,7 @@ function BrandListPage() {
             <Box
               sx={{
                 display: "flex",
-                width: 350,
+                minWidth: 350,
                 justifyContent: "space-between",
               }}
               name="logo"
@@ -127,14 +127,10 @@ function BrandListPage() {
                 <Box component="img" src={brand.logo} alt="logo" width="44px" />
 
                 <Box ml={2}>
-                  <Typography
-                    variant="subtitle2"
-                    fontWeight={400}
-                    fontSize={14}
-                  >
+                  <Typography fontWeight={400} fontSize={14}>
                     {brand.brand}
                   </Typography>
-                  <Typography color="#8C8C8C" fontSize={12}>
+                  <Typography color="#8C8C8C" fontSize={12} fontWeight={400}>
                     {brand.model}
                   </Typography>
                 </Box>

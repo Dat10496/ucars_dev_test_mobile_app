@@ -43,29 +43,31 @@ function AddNewCarPage() {
           <ClearRoundedIcon />
         </Button>
 
-        <Typography fontWeight={600} fontSize={14} ml={10}>
+        <Typography fontWeight={600} fontSize={16} ml={8}>
           Add Car Brand
         </Typography>
       </Box>
 
       <Box p={1} name="body">
-        <Typography variant="subtitle1" fontWeight={600}>
+        <Typography fontSize={14} fontWeight={600}>
           Brand Logo
         </Typography>
 
         <Box
           sx={{
-            width: 100,
-            height: 100,
+            width: 80,
+            height: 80,
             backgroundColor: "#E3E3E3",
-            border: "1px solid #E3E3E3",
+            border: "1px dashed #8C8C8C",
             display: "flex",
-            flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            alignContent: "center",
             borderRadius: 20,
+            mt: 2,
             mb: 3,
+            "&; hover": {
+              cursor: "pointer",
+            },
           }}
         >
           <Typography variant="subtitle1" color="#8C8C8C">
@@ -73,7 +75,7 @@ function AddNewCarPage() {
           </Typography>
         </Box>
 
-        <Typography variant="subtitle1" fontWeight={600}>
+        <Typography fontSize={14} fontWeight={600}>
           Brand Details
         </Typography>
 
