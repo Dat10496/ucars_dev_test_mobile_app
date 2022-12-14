@@ -30,6 +30,7 @@ function CarType() {
         sx={{
           display: "flex",
           justifyContent: "space-between",
+          width: { xs: 375, sm: 700, md: 900 },
         }}
       >
         <Typography ml={2} fontWeight={600} fontSize={16}>

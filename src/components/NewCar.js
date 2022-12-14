@@ -51,7 +51,13 @@ function NewCar() {
                 width="100%"
               />
             </Box>
-            <Typography mt={1} mb={0.5} fontWeight={400} fontSize={14}>
+            <Typography
+              mt={1}
+              mb={0.5}
+              fontWeight={400}
+              fontSize={14}
+              color="#232323"
+            >
               {car.brand}
             </Typography>
             <Typography fontWeight={600} fontSize={14}>

@@ -10,7 +10,7 @@ function MainHeader() {
   return (
     <Box
       height={250}
-      minWidth={{ xs: 375, sm: 700, md: 900 }}
+      minWidth={{ xs: 410, sm: 700, md: 900 }}
       sx={{
         display: "flex",
         alignItems: "center",
@@ -20,7 +20,7 @@ function MainHeader() {
     >
       <Box
         sx={{
-          minWidth: { xs: 343, sm: 700, md: 900 },
+          minWidth: { xs: 414, sm: 700, md: 900 },
           height: 64,
           position: "fixed",
         }}

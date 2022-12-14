@@ -71,7 +71,14 @@ function LatestNew() {
               <Typography fontSize={10}>News</Typography>
             </Box>
 
-            <Typography mt={0.5} mb={0.5} fontSize={14} gutterBottom>
+            <Typography
+              mt={0.5}
+              mb={0.5}
+              fontSize={14}
+              gutterBottom
+              fontWeight={400}
+              color="#232323"
+            >
               {car.description}
             </Typography>
 
