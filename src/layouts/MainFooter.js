@@ -16,7 +16,7 @@ function MainFooter() {
     <>
       <Box
         sx={{
-          width: { xs: 375, sm: 700, md: 900 },
+          minWidth: { xs: 410, sm: 700, md: 900 },
           height: 70,
           display: "flex",
           justifyContent: "space-evenly",
@@ -25,7 +25,7 @@ function MainFooter() {
           position: "fixed",
           bottom: "0%",
           backgroundColor: "#FFFFFF",
-          borderTop: "0.5px solid #B4B4B4",
+          boxShadow: 3,
         }}
       >
         <Box sx={styleBox}>

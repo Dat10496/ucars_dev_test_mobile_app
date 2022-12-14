@@ -20,8 +20,18 @@ function CarType() {
     }
   }, [firstNum, secondNum]);
   return (
-    <Box sx={{ mt: 3, width: { xs: 375, sm: 700, md: 900 } }}>
-      <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+    <Box
+      sx={{
+        mt: 3,
+        width: { xs: 410, sm: 700, md: 900 },
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
         <Typography ml={2} fontWeight={600} fontSize={16}>
           Car Type
         </Typography>
@@ -49,9 +59,6 @@ function CarType() {
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
-              "&: hover": {
-                cursor: "pointer",
-              },
             }}
             key={type.type}
           >

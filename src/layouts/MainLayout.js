@@ -7,7 +7,7 @@ import MainFooter from "./MainFooter";
 
 function MainLayout() {
   return (
-    <Stack sx={{ minHeight: "100vh" }}>
+    <Stack sx={{}}>
       <MainHeader />
       <Outlet />
       <Box sx={{ flexGrow: 1 }} />

@@ -13,7 +13,7 @@ import ford from "../images/logo/ford.png";
 import coupe from "../images/car_type/coupe.png";
 import sedan from "../images/car_type/sedan.png";
 import suv from "../images/car_type/suv.png";
-import mpv from "../images/car_type/mpv1.png";
+import mpv from "../images/car_type/mpv.png";
 import hatchback from "../images/car_type/hatchback.png";
 import sport from "../images/car_type/sport.png";
 import commercial from "../images/car_type/comercial.png";

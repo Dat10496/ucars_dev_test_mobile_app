@@ -55,7 +55,13 @@ function UsedCar() {
                 width="100%"
               />
             </Box>
-            <Typography mt={1} mb={0.5} fontWeight={400} fontSize={14}>
+            <Typography
+              color="#232323"
+              mt={1}
+              mb={0.5}
+              fontWeight={400}
+              fontSize={14}
+            >
               {car.brand}
             </Typography>
             <Typography fontWeight={600} fontSize={14}>
